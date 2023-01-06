@@ -1,5 +1,5 @@
 {
-  "appBarText": "قوائم المهام",
+  "appBarText": "تطبيق الأخبار",
   "settings":   "الاعدادات",
   "language": "اللغة",
   "theme_mode" : "الشكل الخارجي",
@@ -19,6 +19,8 @@
   "save" : "حفظ التغييرات",
   "loading" : "تحميل ...",
   "successfull_message" : "تمت إضافة المهمة بنجاح",
-  "okay" : "تمام"
+  "okay" : "تمام",
+  "caetgories": "التصنيفات"
+
 
 }

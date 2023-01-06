@@ -40,7 +40,7 @@ class _TabControllerTopState extends State<TabControllerTop> {
                   .toList(),
             )),
         FutureBuilder<NewsRes>(
-            future: Api_manager.getNews(widget.sources[selectedIndex].id!),
+            future: Api_manager.getNews(singleSource: widget.sources[selectedIndex].id!),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return Container(

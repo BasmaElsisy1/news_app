@@ -1,5 +1,5 @@
 {
-  "appBarText":"To Do List",
+  "appBarText":"News App",
   "settings": "Settings",
   "language": "Language",
   "theme_mode" : "Apperence",
@@ -19,5 +19,6 @@
   "save" : "Save Changes",
   "loading" : "Loading ...",
   "successfull_message" : "Task Added Successfully",
-  "okay" : "Okay"
+  "okay" : "Okay",
+  "caetgories": "Categories"
 }

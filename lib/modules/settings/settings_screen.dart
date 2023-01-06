@@ -39,7 +39,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             // padding: EdgeInsets.only(left: 50),
 
               child: Text(
-                'Settings',
+                AppLocalizations.of(context)!.settings,
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.normal),
               )),
           centerTitle: true,
@@ -100,7 +100,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   drawerClicked(selectednumber) {
     if (selectednumber == DrawerWidget.category_no) {
-      Navigator.pop(context);
       Navigator.pop(context);
     }
     setState(() {});

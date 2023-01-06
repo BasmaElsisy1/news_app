@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:news/layout/delegateClass.dart';
 import 'package:news/model/SourcesRes.dart';
 import 'package:news/model/category.dart';
 import 'package:news/modules/settings/settings_screen.dart';
 import 'package:news/screens/Categories_screen.dart';
 import 'package:news/screens/drawer_widget.dart';
 import 'package:news/screens/homescreen.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 import 'package:news/shared/network/remote/api_manager.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../model/NewsRes.dart';
@@ -34,12 +37,22 @@ class _HomePageState extends State<HomePage> {
               borderSide: BorderSide(color: Colors.transparent)),
           backgroundColor: greenColor,
           title: Container(
-            // padding: EdgeInsets.only(left: 50),
+              // padding: EdgeInsets.only(left: 50),
 
               child: Text(
-                'News App',
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.normal),
-              )),
+                AppLocalizations.of(context)!.appBarText,
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.normal),
+          )),
+          actions: [
+            IconButton(
+                onPressed: () {
+                  showSearch(context: context, delegate: delegateClass());
+                },
+                icon: Icon(
+                  Icons.search,
+                  size: 32,
+                ))
+          ],
           centerTitle: true,
         ),
         body: selectedCategory == null
